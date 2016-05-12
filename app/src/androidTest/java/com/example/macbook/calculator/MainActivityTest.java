@@ -42,7 +42,7 @@ public class MainActivityTest {
                 .perform(typeText("2"));
         onView(withId(R.id.operand_two_edit_text))
                 .perform(typeText("1"));
-        onView(withId(R.id.operation_add_button))
+        onView(withId(R.id.operation_sub_button))
                 .perform(click());
         onView(withId(R.id.operation_result_text_view))
                 .check(matches(withText("1.0")));
@@ -55,7 +55,7 @@ public class MainActivityTest {
                 .perform(typeText("2"));
         onView(withId(R.id.operand_two_edit_text))
                 .perform(typeText("1"));
-        onView(withId(R.id.operation_add_button))
+        onView(withId(R.id.operation_mul_button))
                 .perform(click());
         onView(withId(R.id.operation_result_text_view))
                 .check(matches(withText("2.0")));
@@ -68,7 +68,7 @@ public class MainActivityTest {
                 .perform(typeText("12"));
         onView(withId(R.id.operand_two_edit_text))
                 .perform(typeText("4"));
-        onView(withId(R.id.operation_add_button))
+        onView(withId(R.id.operation_div_button))
                 .perform(click());
         onView(withId(R.id.operation_result_text_view))
                 .check(matches(withText("3.0")));

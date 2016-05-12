@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements CalculaterListene
         mainController.mul(first,second);
     }
 
-    public void onDivide(View view){
+    public void onDiv(View view){
         first = Double.parseDouble(firstOperandEditText.getText().toString());
         second = Double.parseDouble(secondOperandEditText.getText().toString());
         mainController.divide(first,second);
@@ -55,5 +55,6 @@ public class MainActivity extends AppCompatActivity implements CalculaterListene
     public void onSuccess(String result) {
         resultTextView.setText(result);
     }
+
 }
 
