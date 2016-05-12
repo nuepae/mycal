@@ -38,7 +38,7 @@ public class CalculaterSubtest{
     public static List<Object[]>data(){
         return Arrays.asList(new Object[][]{
                 {1,2,-1.0},
-                {2,1,1}
+                {2,1,1.0}
         });
 
     }
